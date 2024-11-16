@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
@@ -20,10 +19,6 @@ public class GameController {
     private GameService gameService;
 
     @GetMapping
-    public String getMethodName(@RequestParam String param) {
-        return new String();
-    }
-    
     public List<GameMinDTO> findAll() {
         List<GameMinDTO> result = gameService.findAll();
         return result;
