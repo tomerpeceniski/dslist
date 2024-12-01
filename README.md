@@ -24,6 +24,7 @@ Key features of the project include:
 * JPA / Hibernate
 * H2
 * PostgreSQL
+* Postman
 
 # Author
 Tomer Peceniski
